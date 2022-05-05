@@ -1,0 +1,3195 @@
+dns:
+  enable: false
+  ipv6: false
+  nameserver:
+  - 1.2.4.8
+  - 119.29.29.29
+  - 223.5.5.5
+  - 223.6.6.6
+  fallback:
+  - https://dns.adguard.com/dns-query
+  - https://dns.rubyfish.cn/dns-query
+  - https://cloudflare-dns.com/dns-query
+  - https://dns.alidns.com/dns-query
+  - https://1.1.1.1/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+    domain: []
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  default-nameserver:
+  - 1.1.1.1
+  - 8.8.4.4
+  - 119.29.29.29
+  - 223.5.5.5
+  - 223.6.6.6
+  - 208.67.222.222
+  fakeiprange: null
+  hosts: null
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+secret: ""
+proxies:
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn6.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk1
+  ws-opts:
+    headers:
+      Host: cdnjs.cloudfront.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/73.0.3683.103 Safari/537.36
+    path: /hk1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  type: vmess
+  server: cn2.grpc.stream
+  port: 30780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk2
+  ws-opts:
+    headers:
+      Host: cn2.grpc.stream
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/75.0.3770.80 Safari/537.36
+    path: /hk2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  type: vmess
+  server: cn6.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk2
+  ws-opts:
+    headers:
+      Host: cdnjs.cloudfront.com
+      User-Agent: Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like
+        Gecko) Raspbian Chromium/72.0.3626.121 Chrome/72.0.3626.121 Safari/537.36
+    path: /hk2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  type: vmess
+  server: cn4.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk1
+  ws-opts:
+    headers:
+      Host: cn4.grpc.stream
+      User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.4(0x17000428) NetType/WIFI
+        Language/zh_CN
+    path: /hk1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  type: vmess
+  server: hk4.grpc.stream
+  port: 80
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /event
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Android; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1
+        Fennec/2.0.1
+    path: /event
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  type: vmess
+  server: cn2.grpc.stream
+  port: 30780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk1
+  ws-opts:
+    headers:
+      Host: cn2.grpc.stream
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /hk1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  type: vmess
+  server: hk3.grpc.stream
+  port: 8300
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /event
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/75.0.3770.143 YaBrowser/19.7.2.516 Yowser/2.5 Safari/537.36
+    path: /event
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  type: vmess
+  server: cdn.blackpink.buzz
+  port: 443
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /us1
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Maemo; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1
+        Fennec/2.0.1
+    path: /us1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  type: vmess
+  server: hk1.grpc.stream
+  port: 810
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /event
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Linux; U; Android 4.1; en-us; sdk Build/MR1) AppleWebKit/534.30
+        (KHTML, like Gecko) Version/4.1 Safari/534.30
+    path: /event
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn6.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk6
+  ws-opts:
+    headers:
+      Host: cdnjs.cloudfront.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/72.0.3626.81 Safari/537.36
+    path: /hk6
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn6.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk11
+  ws-opts:
+    headers:
+      Host: cdnjs.cloudfront.com
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
+    path: /hk11
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn6.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk4
+  ws-opts:
+    headers:
+      Host: cdnjs.cloudfront.com
+      User-Agent: Mozilla/5.0 (Android 4.2; rv:19.0) Gecko/20121129 Firefox/19.0
+    path: /hk4
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn6.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk7
+  ws-opts:
+    headers:
+      Host: cdnjs.cloudfront.com
+      User-Agent: everyfeed-spider/2.0 (http://www.everyfeed.com)
+    path: /hk7
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  type: vmess
+  server: hk6.grpc.stream
+  port: 80
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /event
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /event
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn3.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk1
+  ws-opts:
+    headers:
+      Host: cn3.grpc.stream
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/33.0.1750.166 Safari/537.36 OPR/20.0.1396.73172
+    path: /hk1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  type: trojan
+  server: cn3.grpc.stream
+  port: 20444
+  cipher: ""
+  password: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  obfs: ""
+  obfs-host: ""
+  uuid: ""
+  tls: false
+  alterId: 0
+  network: ""
+  ws-path: ""
+  ws-opts:
+    headers: {}
+    path: ""
+  sni: blackpink.buzz
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn9.loli.lc
+  port: 433
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /hk1
+  ws-opts:
+    headers:
+      Host: cn9.loli.lc
+      User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0;
+        IEMobile/10.0; ARM; Touch)
+    path: /hk1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  type: vmess
+  server: netflix.hk3.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /video
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.1.17) Gecko/20110123
+        (like Firefox/3.x) SeaMonkey/2.0.12
+    path: /video
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn3.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /tw1
+  ws-opts:
+    headers:
+      Host: cn3.grpc.stream
+      User-Agent: Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G950U Build/PPR1.180610.011)
+        AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87
+        Mobile Safari/537.36
+    path: /tw1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  type: vmess
+  server: download.hk3.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /uk1
+  ws-opts:
+    headers:
+      Host: hk3.grpc.stream
+      User-Agent: Mozilla/5.0 (Linux; Android 9; Pixel 2 XL) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36
+    path: /uk1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  type: vmess
+  server: download.hk3.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /us1
+  ws-opts:
+    headers:
+      Host: hk3.grpc.stream
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/75.0.3770.143 YaBrowser/19.7.2.455 Yowser/2.5 Safari/537.36
+    path: /us1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  type: vmess
+  server: hk7.grpc.stream
+  port: 80
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /event
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91)
+        AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+    path: /event
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  type: vmess
+  server: download.hk3.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /tw1
+  ws-opts:
+    headers:
+      Host: hk3.grpc.stream
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1
+    path: /tw1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  type: vmess
+  server: download.hk3.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /jp2
+  ws-opts:
+    headers:
+      Host: hk3.grpc.stream
+      User-Agent: Gaisbot/3.0 (robot@gais.cs.ccu.edu.tw; http://gais.cs.ccu.edu.tw/robot.php)
+    path: /jp2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  type: vmess
+  server: cn3.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /jp2
+  ws-opts:
+    headers:
+      Host: cn3.grpc.stream
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0a2) Gecko/20110622 Firefox/6.0a2
+    path: /jp2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  type: vmess
+  server: cn3.grpc.stream
+  port: 10780
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /us1
+  ws-opts:
+    headers:
+      Host: cn3.grpc.stream
+      User-Agent: WDG_Validator/1.6.2
+    path: /us1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  type: vmess
+  server: cn1.loli.lc
+  port: 433
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /us1
+  ws-opts:
+    headers:
+      Host: cn1.loli.lc
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/74.0.3729.157 Safari/537.36
+    path: /us1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  type: vmess
+  server: cn1.loli.lc
+  port: 433
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /jp2
+  ws-opts:
+    headers:
+      Host: cn1.loli.lc
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko
+    path: /jp2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  type: vmess
+  server: download.hk1.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /us1
+  ws-opts:
+    headers:
+      Host: hk1.grpc.stream
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/77.0.3844.0 Safari/537.36
+    path: /us1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  type: vmess
+  server: download.hk1.grpc.stream
+  port: 880
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /jp2
+  ws-opts:
+    headers:
+      Host: hk1.grpc.stream
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; GT-I9190) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36
+    path: /jp2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  type: vmess
+  server: cn1.loli.lc
+  port: 433
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /ru2
+  ws-opts:
+    headers:
+      Host: cn1.loli.lc
+      User-Agent: Mozilla/5.0 (Linux; U; Android 2.2; en-us; SCH-I800 Build/FROYO)
+        AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+    path: /ru2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  type: vmess
+  server: us4.grpc.stream
+  port: 80
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /websocket
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/75.0.3770.100 Safari/537.36
+    path: /websocket
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  type: vmess
+  server: ru2.loli.lc
+  port: 8301
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /ru2
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+
+        (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2
+    path: /ru2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  type: vmess
+  server: hk5.loli.lc
+  port: 8300
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /hk5
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; FP2) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/78.0.3888.0 Mobile Safari/537.36
+    path: /hk5
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  type: vmess
+  server: tw1.grpc.stream
+  port: 80
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /tw1
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Googlebot-Video/1.0
+    path: /tw1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  type: vmess
+  server: hk2.grpc.stream
+  port: 443
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /event
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Opera/9.80 (Android; Opera Mini/42.0.2254/150.36; U; en) Presto/2.12.423
+        Version/12.16
+    path: /event
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  type: vmess
+  server: jp3.loli.lc
+  port: 8300
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /jp3
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: w3m/0.5.1
+    path: /jp3
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  type: vmess
+  server: uk1.grpc.stream
+  port: 8300
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /stream
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: SonyEricssonT68/R201A
+    path: /stream
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  type: vmess
+  server: us2.loli.lc
+  port: 443
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /us2
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; HUAWEI VNS-L31) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36
+    path: /us2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  type: vmess
+  server: jp2.grpc.stream
+  port: 8300
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /jp2
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: POLARIS/6.01 (BREW 3.1.5; U; en-us; LG; LX265; POLARIS/6.01/WAP)
+        MMP/2.0 profile/MIDP-2.1 Configuration/CLDC-1.1
+    path: /jp2
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  type: vmess
+  server: jp1.loli.lc
+  port: 443
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: true
+  alterId: 2
+  network: ws
+  ws-path: /jp1
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko)
+        Chrome/13.0.782.20 Safari/535.1
+    path: /jp1
+  sni: ""
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  type: vmess
+  server: us1.grpc.stream
+  port: 80
+  cipher: auto
+  password: ""
+  obfs: ""
+  obfs-host: ""
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  tls: false
+  alterId: 2
+  network: ws
+  ws-path: /us1
+  ws-opts:
+    headers:
+      Host: ""
+      User-Agent: Mozilla/5.0 (Linux; Android 9; Redmi Note 7) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/75.0.3770.89 Mobile Safari/537.36
+    path: /us1
+  sni: ""
+  skip-cert-verify: false
+proxy-groups:
+- name: "\U0001F30E全球加速"
+  type: select
+  proxies:
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - DIRECT
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F448直连"
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F30E全球加速"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F6AB广告拦截"
+  type: select
+  proxies:
+  - REJECT
+  - "\U0001F30E全球加速"
+  - "\U0001F448直连"
+  - ♻️自动选择
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F426twitter"
+  type: select
+  proxies:
+  - "\U0001F30E全球加速"
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F448直连"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: Google
+  type: select
+  proxies:
+  - "\U0001F30E全球加速"
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F448直连"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: Apple_API
+  type: select
+  proxies:
+  - "\U0001F448直连"
+  - "\U0001F30E全球加速"
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: Apple_CDN
+  type: select
+  proxies:
+  - "\U0001F448直连"
+  - Apple_API
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: AsianMedia
+  type: select
+  proxies:
+  - "\U0001F448直连"
+  - "\U0001F30E全球加速"
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F30E全球加速Media"
+  type: select
+  proxies:
+  - "\U0001F30E全球加速"
+  - "\U0001F448直连"
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F3B5Spotify"
+  type: select
+  proxies:
+  - "\U0001F30E全球加速"
+  - "\U0001F448直连"
+  - ♻️自动选择
+  - "\U0001F530节点选择"
+  - "\U0001F1E8\U0001F1F3国内中转"
+  - "\U0001F1ED\U0001F1F0香港"
+  - "\U0001F1EF\U0001F1F5日本"
+  - "\U0001F1FA\U0001F1F8美国"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F530节点选择"
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: ""
+  interval: 0
+  contain_proxy_name: ""
+- name: "\U0001F1E8\U0001F1F3国内中转"
+  type: fallback
+  proxies:
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  contain_proxy_name: CN
+- name: "\U0001F1ED\U0001F1F0香港"
+  type: fallback
+  proxies:
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  contain_proxy_name: 香港
+- name: "\U0001F1EF\U0001F1F5日本"
+  type: fallback
+  proxies:
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  contain_proxy_name: 日本
+- name: "\U0001F1FA\U0001F1F8美国"
+  type: fallback
+  proxies:
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  contain_proxy_name: 美国
+- name: ♻️自动选择
+  type: fallback
+  proxies:
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][2.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN4[上海BGP]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN2[上海cn2]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港3[AZ][0.80][vmess]"
+  - "\U0001F1FA\U0001F1F8美国3[CF][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港4[HGC][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][由\U0001F1E8\U0001F1F3CN6[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港6[HKT][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][trojan]"
+  - "\U0001F1ED\U0001F1F0香港1[HKBGP][由\U0001F1E8\U0001F1F3CN9[广州移动]中转][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港11[NF][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港3[AZ]中转][0.50][vmess]"
+  - "\U0001F1ED\U0001F1F0香港7[WTT][1.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港3[AZ]中转][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN3[广州移动]中转][0.50][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][0.50][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][由\U0001F1ED\U0001F1F0香港1[HKBGP]中转][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][由\U0001F1E8\U0001F1F3CN1[湖南联通]中转][0.10][vmess]"
+  - "\U0001F1FA\U0001F1F8美国4[GGC][1.00][vmess]"
+  - "\U0001F1F7\U0001F1FA俄罗斯2[新西伯利亚][0.10][vmess]"
+  - "\U0001F1ED\U0001F1F0香港5[Ali][10.00][vmess]"
+  - "\U0001F1F9\U0001F1FC台湾1[HiNet][1.00][vmess]"
+  - "\U0001F1ED\U0001F1F0香港2[HKBGP][2.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本3号[北海道][1.00][vmess]"
+  - "\U0001F1EC\U0001F1E7英国1[1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国2[MC][0.20][vmess]"
+  - "\U0001F1EF\U0001F1F5日本2号[北海道][1.00][vmess]"
+  - "\U0001F1EF\U0001F1F5日本1号[东京][1.00][vmess]"
+  - "\U0001F1FA\U0001F1F8美国1[MC][0.50][vmess]"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  contain_proxy_name: ""
+rules:
+- "DOMAIN-SUFFIX,sf-express.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sfai.ml,\U0001F448直连"
+- "DOMAIN-SUFFIX,sfai.io,\U0001F448直连"
+- "DOMAIN-SUFFIX,17gouwuba.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,186078.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,189zj.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,285680.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,3721zh.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,4336wang.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,51chumoping.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,51mld.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,51mypc.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,58mingri.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,58mingtian.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,5vl58stm.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,6d63d3.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,7gg.cc,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,91veg.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,9s6q.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adsame.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,aiclk.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,akuai.top,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,atplay.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,baiwanchuangyi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,beerto.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,beilamusi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,benshiw.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,bianxianmao.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,bryonypie.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,cishantao.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,cszlks.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,cudaojia.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,dafapromo.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,daitdai.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,dsaeerf.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,dugesheying.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,dv8c1t.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,echatu.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,erdoscs.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,fan-yong.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,feih.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,fjlqqc.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,fkku194.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,freedrive.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,gclick.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,goufanli100.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,goupaoerdai.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,gouwubang.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,gzxnlk.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,haoshengtoys.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,hyunke.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ichaosheng.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ishop789.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,jdkic.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,jiubuhua.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,jsncke.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,junkucm.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,jwg365.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,kawo77.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,kualianyingxiao.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,kumihua.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ltheanine.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,maipinshangmao.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,minisplat.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,mkitgfs.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,mlnbike.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,mobjump.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,nbkbgd.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,newapi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,pinzhitmall.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,poppyta.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,qianchuanghr.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,qichexin.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,qinchugudao.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,quanliyouxi.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,qutaobi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ry51w.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sg536.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifubo.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuce.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuda.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifufu.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuge.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifugu.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuhe.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuhu.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuji.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sifuka.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,smgru.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,taoggou.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tcxshop.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tjqonline.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,topitme.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tt3sm4.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tuia.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tuipenguin.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tuitiger.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,websd8.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,wsgblw.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,wx16999.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,xchmai.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,xiaohuau.xyz,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ygyzx.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,yinmong.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,yitaopt.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,yjqiqi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,yukhj.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,zhaozecheng.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,zhenxinet.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,zlne800.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,zunmi.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,zzd6.com,\U0001F6AB广告拦截"
+- "IP-CIDR,39.107.15.115/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,47.89.59.182/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,103.49.209.27/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,123.56.152.96/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,61.160.200.223/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,61.160.200.242/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,61.160.200.252/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,61.174.50.214/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,111.175.220.163/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,111.175.220.164/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,122.229.8.47/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,122.229.29.89/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,124.232.160.178/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,175.6.223.15/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,183.59.53.237/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,218.93.127.37/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,221.228.17.152/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,221.231.6.79/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,222.186.61.91/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,222.186.61.95/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,222.186.61.96/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,222.186.61.97/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,106.75.231.48/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,119.4.249.166/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,220.196.52.141/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,221.6.4.148/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,114.247.28.96/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,221.179.131.72/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,221.179.140.145/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,115.182.16.79/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,118.144.88.126/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,118.144.88.215/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,118.144.88.216/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,120.76.189.132/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,124.14.21.147/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,124.14.21.151/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,180.166.52.24/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,211.161.101.106/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,220.115.251.25/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,222.73.156.235/32,\U0001F6AB广告拦截,no-resolve"
+- "DOMAIN-KEYWORD,adservice,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ad.cmvideo.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ad.daum.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adcolony.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adinall.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,admaster.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,admob.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adnxs.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adnyg.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adsensor.org,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adsymptotic.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adthor.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,adwhirl.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,amazon-adsystem.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,amobee.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,app-adforce.jp,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,appads.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,appcpi.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,appier.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,applift.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,applovin.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,applvn.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,apsalar.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,apxadtracking.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,axonix.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,bayimob.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,bjvvqu.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,bulldogcpi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,clotfun.mobi,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,clotfun.online,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,cloudmobi.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,crwdcntrl.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ctrmi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,exosrv.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,go2cloud.org,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,growingio.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,haloapps.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,hypers.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,idealads.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,inmobi.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,inmobi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,inmobi.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,inmobicdn.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,inmobicdn.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,inner-active.mobi,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,insurads.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ironsrc.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,irs01.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,iskyworker.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,juicyads.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,kochava.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,leadboltmobile.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,lenzmx.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,liveadvert.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,lnk0.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,lnk8.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,localytics.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,mdfull.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,measurementapi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,medialytics.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,meetrics.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,meetrics.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,miaozhen.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,moatads.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,mobclix.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,mopub.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,okjhb.xyz,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,openx.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,outbrain.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,pubmatic.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,qchannel01.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,rayjump.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,rtbasia.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,rubiconproject.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,scorecardresearch.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,sdkclick.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,shuzilm.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,smaato.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,smartadserver.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,smartnews-ads.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,supersonic.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,supersonicads.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tanv.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tanx.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,tapjoy.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,trafficjunky.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,turn.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,uri6.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,vidoomy.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,vungle.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,wedolook.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,xdrig.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,yumimobi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,zu08e.cn,\U0001F6AB广告拦截"
+- "DOMAIN,abema-adx.ameba.jp,\U0001F6AB广告拦截"
+- "DOMAIN,ad-channel.woyeahgo.tk,\U0001F6AB广告拦截"
+- "DOMAIN,ad-cn.jovcloud.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.12306.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ad.360in.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.51wnl-cq.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.caiyunapp.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.huajiao.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.hzyoka.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.jiemian.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.qingting.fm,\U0001F6AB广告拦截"
+- "DOMAIN,ad.wappalyzer.com,\U0001F6AB广告拦截"
+- "DOMAIN,adextra.51wnl-cq.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads.adadapted.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads.chinadaily.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ads.daydaycook.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ads.weilitoutiao.net,\U0001F6AB广告拦截"
+- "DOMAIN,adsapi.manhuaren.com,\U0001F6AB广告拦截"
+- "DOMAIN,adsdk.dmzj.com,\U0001F6AB广告拦截"
+- "DOMAIN,adserver.pandora.com,\U0001F6AB广告拦截"
+- "DOMAIN,adshow.58.com,\U0001F6AB广告拦截"
+- "DOMAIN,adui.tg.meitu.com,\U0001F6AB广告拦截"
+- "DOMAIN,adv.bandi.so,\U0001F6AB广告拦截"
+- "DOMAIN,app-ad.variflight.com,\U0001F6AB广告拦截"
+- "DOMAIN,appnext-a.akamaihd.net,\U0001F6AB广告拦截"
+- "DOMAIN,appnext.hs.llnwd.net,\U0001F6AB广告拦截"
+- "DOMAIN,g1.tagtic.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ggs.myzaker.com,\U0001F6AB广告拦截"
+- "DOMAIN,itad.linetv.tw,\U0001F6AB广告拦截"
+- "DOMAIN,ja.chushou.tv,\U0001F6AB广告拦截"
+- "DOMAIN,mads.suning.com,\U0001F6AB广告拦截"
+- "DOMAIN,mobileads.msn.com,\U0001F6AB广告拦截"
+- "DOMAIN,mopnativeadv.037201.com,\U0001F6AB广告拦截"
+- "DOMAIN,nativeadv.dftoutiao.com,\U0001F6AB广告拦截"
+- "DOMAIN,oset-api.open-adx.com,\U0001F6AB广告拦截"
+- "DOMAIN,sdkauth.hpplay.cn,\U0001F6AB广告拦截"
+- "DOMAIN,optimus-ads.amap.com,\U0001F6AB广告拦截"
+- "DOMAIN,optimus-ads.amap.com.w.alikunlun.com,\U0001F6AB广告拦截"
+- "DOMAIN,tunion-api.m.taobao.com,\U0001F6AB广告拦截"
+- "IP-CIDR,112.29.211.120/32,\U0001F6AB广告拦截,no-resolve"
+- "DOMAIN-SUFFIX,ads.internal.unity3d.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,iadsdk.apple.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,unityads.unity3d.com,\U0001F6AB广告拦截"
+- "DOMAIN,adproxy.autohome.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,al.autohome.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,applogapi.autohome.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,rd.autohome.com.cn,\U0001F6AB广告拦截"
+- "IP-CIDR,103.75.152.210/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,103.75.153.3/32,\U0001F6AB广告拦截,no-resolve"
+- "DOMAIN-SUFFIX,cpro.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,afd.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,als.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,duclick.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,mobads.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,mobads-logs.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,nsclick.baidu.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads.wakamoment.tk,\U0001F6AB广告拦截"
+- "DOMAIN,ad-display.wikawika.xyz,\U0001F6AB广告拦截"
+- "DOMAIN,adx.yiche.com,\U0001F6AB广告拦截"
+- "DOMAIN,log.ycapp.yiche.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.toutiao.com,\U0001F6AB广告拦截"
+- "DOMAIN,advertise.baicizhan.com,\U0001F6AB广告拦截"
+- "DOMAIN,advertise.baicizhan.org,\U0001F6AB广告拦截"
+- "DOMAIN,ad.21cn.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.k.21cn.com,\U0001F6AB广告拦截"
+- "DOMAIN,admarket.21cn.com,\U0001F6AB广告拦截"
+- "DOMAIN,adshows.21cn.com,\U0001F6AB广告拦截"
+- "DOMAIN,galaxy.bjcathay.com,\U0001F6AB广告拦截"
+- "DOMAIN,mdrecv.app.cntvwb.cn,\U0001F6AB广告拦截"
+- "DOMAIN,sdapprecv.app.cntvwb.cn,\U0001F6AB广告拦截"
+- "DOMAIN,vdapprecv.app.cntvwb.cn,\U0001F6AB广告拦截"
+- "DOMAIN,atrace.chelaile.net.cn,\U0001F6AB广告拦截"
+- "DOMAIN,logs.chelaile.net.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ap.dongqiudi.com,\U0001F6AB广告拦截"
+- "DOMAIN,dns.jd.com,\U0001F6AB广告拦截"
+- "IP-CIDR,101.124.19.122/32,\U0001F6AB广告拦截,no-resolve"
+- "DOMAIN-SUFFIX,doubleclick.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,googleadservices.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,googleadsserving.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,googlesyndication.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,da.hunantv.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,da.mgtv.com,\U0001F6AB广告拦截"
+- "DOMAIN,adx-api.hupu.com,\U0001F6AB广告拦截"
+- "DOMAIN,adx.hupu.com,\U0001F6AB广告拦截"
+- "DOMAIN,goblin.hupu.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,deliver.ifeng.com,\U0001F6AB广告拦截"
+- "DOMAIN,api.newad.ifeng.com,\U0001F6AB广告拦截"
+- "DOMAIN,ifengad.3g.ifeng.com,\U0001F6AB广告拦截"
+- "DOMAIN,t7z.cupid.iqiyi.com,\U0001F6AB广告拦截"
+- "IP-CIDR,101.227.97.240/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,101.227.200.11/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,101.227.200.28/32,\U0001F6AB广告拦截,no-resolve"
+- "IP-CIDR,124.192.153.42/32,\U0001F6AB广告拦截,no-resolve"
+- "DOMAIN,ad-stat.ksosoft.com,\U0001F6AB广告拦截"
+- "DOMAIN,counter.kingsoft.com,\U0001F6AB广告拦截"
+- "DOMAIN,counter.ksosoft.com,\U0001F6AB广告拦截"
+- "DOMAIN,img.auction-ads.wpscdn.cn,\U0001F6AB广告拦截"
+- "DOMAIN,minfo.wps.cn,\U0001F6AB广告拦截"
+- "DOMAIN,mobad.ijinshan.com,\U0001F6AB广告拦截"
+- "DOMAIN,ups.ksmobile.net,\U0001F6AB广告拦截"
+- "DOMAIN,ws.ksmobile.net,\U0001F6AB广告拦截"
+- "DOMAIN,ads.service.kugou.com,\U0001F6AB广告拦截"
+- "DOMAIN,adserviceretry.kugou.com,\U0001F6AB广告拦截"
+- "DOMAIN,adsfile.bssdlbig.kugou.com,\U0001F6AB广告拦截"
+- "DOMAIN,g.koowo.com,\U0001F6AB广告拦截"
+- "DOMAIN,kgmobilestat.kugou.com,\U0001F6AB广告拦截"
+- "DOMAIN,kgmobilestatbak.kugou.com,\U0001F6AB广告拦截"
+- "DOMAIN,mobilead.kuwo.cn,\U0001F6AB广告拦截"
+- "DOMAIN,mobilelog.kugou.com,\U0001F6AB广告拦截"
+- "DOMAIN,rich.kuwo.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,webp2p.letv.com,\U0001F6AB广告拦截"
+- "DOMAIN,ark.letv.com,\U0001F6AB广告拦截"
+- "DOMAIN,emma-414870e223.huodonghezi.com,\U0001F6AB广告拦截"
+- "DOMAIN,g3.letv.com,\U0001F6AB广告拦截"
+- "DOMAIN,n.mark.letv.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.hpplay.cn,\U0001F6AB广告拦截"
+- "DOMAIN,adcdn.hpplay.cn,\U0001F6AB广告拦截"
+- "DOMAIN,adeng.hpplay.cn,\U0001F6AB广告拦截"
+- "DOMAIN,rp.hpplay.cn,\U0001F6AB广告拦截"
+- "DOMAIN,flowplus.meituan.net,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ad.intl.xiaomi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ad.xiaomi.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,admob.xiaomi.com,\U0001F6AB广告拦截"
+- "DOMAIN,adv.sec.intl.miui.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.api.moji.com,\U0001F6AB广告拦截"
+- "DOMAIN,adlaunch.moji.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads.mojicdn.com,\U0001F6AB广告拦截"
+- "DOMAIN,v1.log.moji.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.bn.netease.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.yixin.im,\U0001F6AB广告拦截"
+- "DOMAIN,admusicpic.music.126.net,\U0001F6AB广告拦截"
+- "DOMAIN,gorgon.youdao.com,\U0001F6AB广告拦截"
+- "DOMAIN,iadmat.nosdn.127.net,\U0001F6AB广告拦截"
+- "DOMAIN,iadmusicmat.music.126.net,\U0001F6AB广告拦截"
+- "DOMAIN,iadmusicmatvideo.music.126.net,\U0001F6AB广告拦截"
+- "DOMAIN,impservice.dictapp.youdao.com,\U0001F6AB广告拦截"
+- "DOMAIN,impservice.youdao.com,\U0001F6AB广告拦截"
+- "DOMAIN,log-yex.youdao.com,\U0001F6AB广告拦截"
+- "DOMAIN,log.yex.youdao.com,\U0001F6AB广告拦截"
+- "DOMAIN,n.3g.163.com,\U0001F6AB广告拦截"
+- "DOMAIN,nex.163.com,\U0001F6AB广告拦截"
+- "DOMAIN,yt-adp.nosdn.127.net,\U0001F6AB广告拦截"
+- "DOMAIN,yt-adp.ws.126.net,\U0001F6AB广告拦截"
+- "DOMAIN,adfile.wifi8.com,\U0001F6AB广告拦截"
+- "DOMAIN,adnew.wifi8.com,\U0001F6AB广告拦截"
+- "DOMAIN,cdn.adapi.fotoable.com,\U0001F6AB广告拦截"
+- "DOMAIN,regist.fotoable.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads.aplus.pptv.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads.aplusapi.pptv.com,\U0001F6AB广告拦截"
+- "DOMAIN,asimgs.pplive.cn,\U0001F6AB广告拦截"
+- "DOMAIN,de.as.pptv.com,\U0001F6AB广告拦截"
+- "DOMAIN,tj.playcvn.com,\U0001F6AB广告拦截"
+- "DOMAIN,tu.cvnad.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,beacon.sina.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,adimg.vue.weibo.com,\U0001F6AB广告拦截"
+- "DOMAIN,sax.sina.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,saxn.sina.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,saxs.sina.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,u1.img.mobile.sina.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ad.sohu.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,ads.sohu.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,aty.sohu.com,\U0001F6AB广告拦截"
+- "DOMAIN,hui.sohu.com,\U0001F6AB广告拦截"
+- "DOMAIN,imp.optaim.com,\U0001F6AB广告拦截"
+- "DOMAIN,track.sohu.com,\U0001F6AB广告拦截"
+- "DOMAIN,v2.reachmax.cn,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,e.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,gdt.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,l.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,adsmind.apdcdn.tc.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,adsmind.gdtimg.com,\U0001F6AB广告拦截"
+- "DOMAIN,adsmind.tc.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,btrace.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,pgdt.gtimg.cn,\U0001F6AB广告拦截"
+- "DOMAIN,pgdt.gtimg.com,\U0001F6AB广告拦截"
+- "DOMAIN,pgdt.ugdtimg.com,\U0001F6AB广告拦截"
+- "DOMAIN,splashqqlive.gtimg.com,\U0001F6AB广告拦截"
+- "DOMAIN,wa.gtimg.com,\U0001F6AB广告拦截"
+- "DOMAIN,wxsnsdy.wxs.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,wxsnsdythumb.wxs.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,dp3.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,lives.l.qq.com,\U0001F6AB广告拦截"
+- "DOMAIN,admonitor.thepaper.cn,\U0001F6AB广告拦截"
+- "DOMAIN,adpai.thepaper.cn,\U0001F6AB广告拦截"
+- "DOMAIN,imgadpai.thepaper.cn,\U0001F6AB广告拦截"
+- "DOMAIN,adsp.xunlei.com,\U0001F6AB广告拦截"
+- "DOMAIN,etl.xlmc.sandai.net,\U0001F6AB广告拦截"
+- "DOMAIN,adm.10jqka.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,stat.10jqka.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ad-analysis.pconline.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,iad0ssl.pcauto.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,iad0ssl.pconline.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,imgad0.pcauto.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,imgad0.pconline.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,ivy.pchouse.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,a.wkanx.com,\U0001F6AB广告拦截"
+- "DOMAIN,c1wx.lianwangtech.com,\U0001F6AB广告拦截"
+- "DOMAIN,cwx.lianwangtech.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.ximalaya.com,\U0001F6AB广告拦截"
+- "DOMAIN,adbehavior.wsa.ximalaya.com,\U0001F6AB广告拦截"
+- "DOMAIN,adbs.ximalaya.com,\U0001F6AB广告拦截"
+- "DOMAIN,adse.wsa.ximalaya.com,\U0001F6AB广告拦截"
+- "DOMAIN,adse.ximalaya.com,\U0001F6AB广告拦截"
+- "DOMAIN,adsebs.ximalaya.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads-img-qc.xhscdn.com,\U0001F6AB广告拦截"
+- "DOMAIN,ads-video-qc.xhscdn.com,\U0001F6AB广告拦截"
+- "DOMAIN,t-ads.xiaohongshu.com,\U0001F6AB广告拦截"
+- "DOMAIN-SUFFIX,atm.youku.com,\U0001F6AB广告拦截"
+- "DOMAIN,ad.mobile.youku.com,\U0001F6AB广告拦截"
+- "DOMAIN,iyes.youku.com,\U0001F6AB广告拦截"
+- "DOMAIN,ehg-youtube.hitbox.com,\U0001F6AB广告拦截"
+- "DOMAIN,apppv.zol.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,pvnapp.zol.com.cn,\U0001F6AB广告拦截"
+- "DOMAIN,app-advertise.zhihuishu.com,\U0001F6AB广告拦截"
+- DOMAIN,aod.itunes.apple.com,Apple_CDN
+- DOMAIN,api.smoot.apple.cn,Apple_CDN
+- DOMAIN,music.apple.com,Apple_CDN
+- DOMAIN,mvod.itunes.apple.com,Apple_CDN
+- DOMAIN-SUFFIX,mzstatic.com,Apple_CDN
+- DOMAIN,iosapps.itunes.apple.com,Apple_CDN
+- DOMAIN,osxapps.itunes.apple.com,Apple_CDN
+- DOMAIN,supportdownload.apple.com,Apple_CDN
+- DOMAIN,appldnld.apple.com,Apple_CDN
+- DOMAIN,swcdn.apple.com,Apple_CDN
+- DOMAIN,apptrailers.itunes.apple.com,Apple_CDN
+- DOMAIN,updates-http.cdn-apple.com,Apple_CDN
+- DOMAIN-SUFFIX,ls.apple.com,Apple_CDN
+- DOMAIN,gs-loc-cn.apple.com,Apple_CDN
+- DOMAIN-SUFFIX,aaplimg.com,Apple_API
+- DOMAIN-SUFFIX,apple.co,Apple_API
+- DOMAIN-SUFFIX,apple.com,Apple_API
+- DOMAIN-SUFFIX,apple-cloudkit.com,Apple_API
+- DOMAIN-SUFFIX,appsto.re,Apple_API
+- DOMAIN-SUFFIX,cdn-apple.com,Apple_API
+- DOMAIN-SUFFIX,icloud.com,Apple_API
+- DOMAIN-SUFFIX,icloud-content.com,Apple_API
+- DOMAIN-SUFFIX,itunes.com,Apple_API
+- DOMAIN-SUFFIX,me.com,Apple_API
+- IP-CIDR,17.0.0.0/8,Apple_API,no-resolve
+- IP-CIDR,63.92.224.0/19,Apple_API,no-resolve
+- IP-CIDR,65.199.22.0/23,Apple_API,no-resolve
+- IP-CIDR,139.178.128.0/18,Apple_API,no-resolve
+- IP-CIDR,144.178.0.0/19,Apple_API,no-resolve
+- IP-CIDR,144.178.36.0/22,Apple_API,no-resolve
+- IP-CIDR,144.178.48.0/20,Apple_API,no-resolve
+- IP-CIDR,192.35.50.0/24,Apple_API,no-resolve
+- IP-CIDR,198.183.17.0/24,Apple_API,no-resolve
+- IP-CIDR,205.180.175.0/24,Apple_API,no-resolve
+- DOMAIN-SUFFIX,apple.news,Apple_API
+- DOMAIN-KEYWORD,bilibili,AsianMedia
+- DOMAIN-SUFFIX,acg.tv,AsianMedia
+- DOMAIN-SUFFIX,acgvideo.com,AsianMedia
+- DOMAIN-SUFFIX,b23.tv,AsianMedia
+- DOMAIN-SUFFIX,biliapi.com,AsianMedia
+- DOMAIN-SUFFIX,biliapi.net,AsianMedia
+- DOMAIN-SUFFIX,bilibili.com,AsianMedia
+- DOMAIN-SUFFIX,bilibili.tv,AsianMedia
+- DOMAIN-SUFFIX,biligame.com,AsianMedia
+- DOMAIN-SUFFIX,biligame.net,AsianMedia
+- DOMAIN-SUFFIX,bilivideo.com,AsianMedia
+- DOMAIN-SUFFIX,hdslb.com,AsianMedia
+- DOMAIN-SUFFIX,im9.com,AsianMedia
+- DOMAIN,upos-hz-mirrorakam.akamaized.net,AsianMedia
+- DOMAIN-KEYWORD,qiyi,AsianMedia
+- DOMAIN-SUFFIX,71.am.com,AsianMedia
+- DOMAIN-SUFFIX,qy.net,AsianMedia
+- IP-CIDR,101.224.0.0/13,AsianMedia,no-resolve
+- IP-CIDR,101.227.0.0/16,AsianMedia,no-resolve
+- IP-CIDR,119.176.0.0/12,AsianMedia,no-resolve
+- DOMAIN-SUFFIX,api.mob.app.letv.com,AsianMedia
+- DOMAIN-SUFFIX,vv.video.qq.com,AsianMedia
+- IP-CIDR,106.11.0.0/16,AsianMedia,no-resolve
+- "DOMAIN-SUFFIX,deezer.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,dzcdn.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,kkbox.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,kkbox.com.tw,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,kfs.io,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,joox.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,pandora.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,p-cdn.us,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,sndcdn.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,soundcloud.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,pscdn.co,\U0001F3B5Spotify"
+- "DOMAIN-SUFFIX,scdn.co,\U0001F3B5Spotify"
+- "DOMAIN-SUFFIX,spotify.com,\U0001F3B5Spotify"
+- "DOMAIN-SUFFIX,spoti.fi,\U0001F3B5Spotify"
+- "DOMAIN-KEYWORD,spotify.com,\U0001F3B5Spotify"
+- "DOMAIN-KEYWORD,-spotify-com,\U0001F3B5Spotify"
+- "DOMAIN-SUFFIX,tidal.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,c4assets.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,channel4.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,abema.io,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,ameba.jp,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,abema.tv,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hayabusa.io,\U0001F30E全球加速Media"
+- "DOMAIN,abematv.akamaized.net,\U0001F30E全球加速Media"
+- "DOMAIN,ds-linear-abematv.akamaized.net,\U0001F30E全球加速Media"
+- "DOMAIN,ds-vod-abematv.akamaized.net,\U0001F30E全球加速Media"
+- "DOMAIN,linear-abematv.akamaized.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,aiv-cdn.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,aiv-delivery.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,amazonvideo.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,primevideo.com,\U0001F30E全球加速Media"
+- "DOMAIN,avodmp4s3ww-a.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,d25xi40x97liuc.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN,dmqdd6hw24ucf.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN,d22qjgkvxw22r6.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN,d1v5ir2lpwr8os.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN-KEYWORD,avoddashs,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,bahamut.com.tw,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,gamer.com.tw,\U0001F30E全球加速Media"
+- "DOMAIN,gamer-cds.cdn.hinet.net,\U0001F30E全球加速Media"
+- "DOMAIN,gamer2-cds.cdn.hinet.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,bbc.co.uk,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,bbci.co.uk,\U0001F30E全球加速Media"
+- "DOMAIN-KEYWORD,bbcfmt,\U0001F30E全球加速Media"
+- "DOMAIN-KEYWORD,uk-live,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,dazn.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,dazn-api.com,\U0001F30E全球加速Media"
+- "DOMAIN,d151l6v8er5bdm.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN-KEYWORD,voddazn,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,bamgrid.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,disney-plus.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,disneyplus.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,dssott.com,\U0001F30E全球加速Media"
+- "DOMAIN,cdn.registerdisney.go.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,encoretvb.com,\U0001F30E全球加速Media"
+- "DOMAIN,edge.api.brightcove.com,\U0001F30E全球加速Media"
+- "DOMAIN,bcbolt446c5271-a.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,fox.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,foxdcg.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,theplatform.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,uplynk.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hbo.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hbogo.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hbonow.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hbogoasia.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hbogoasia.hk,\U0001F30E全球加速Media"
+- "DOMAIN,bcbolthboa-a.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,players.brightcove.net,\U0001F30E全球加速Media"
+- "DOMAIN,s3-ap-southeast-1.amazonaws.com,\U0001F30E全球加速Media"
+- "DOMAIN,dai3fd1oh325y.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,\U0001F30E全球加速Media"
+- "DOMAIN,hboasia1-i.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,hboasia2-i.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,hboasia3-i.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,hboasia4-i.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,hboasia5-i.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,5itv.tv,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,ocnttv.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hulu.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,huluim.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hulustream.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,happyon.jp,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,hulu.jp,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,itv.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,itvstatic.com,\U0001F30E全球加速Media"
+- "DOMAIN,itvpnpmobile-a.akamaihd.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,kktv.com.tw,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,kktv.me,\U0001F30E全球加速Media"
+- "DOMAIN,kktv-theater.kk.stream,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,linetv.tw,\U0001F30E全球加速Media"
+- "DOMAIN,d3c7rimkq79yfu.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,litv.tv,\U0001F30E全球加速Media"
+- "DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,channel5.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,my5.tv,\U0001F30E全球加速Media"
+- "DOMAIN,d349g9zuie06uo.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,mytvsuper.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,tvb.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,netflix.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,netflix.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nflxext.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nflximg.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nflximg.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nflxso.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nflxvideo.net,\U0001F30E全球加速Media"
+- "IP-CIDR,8.41.4.0/24,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,23.246.0.0/18,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,37.77.184.0/21,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,45.57.0.0/17,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,64.120.128.0/17,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,66.197.128.0/17,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,69.53.224.0/19,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,108.175.32.0/20,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,185.2.220.0/22,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,185.9.188.0/22,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,192.173.64.0/18,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,198.38.96.0/19,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,198.45.48.0/20,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,207.45.72.0/22,\U0001F30E全球加速Media,no-resolve"
+- "IP-CIDR,208.75.76.0/22,\U0001F30E全球加速Media,no-resolve"
+- "DOMAIN-SUFFIX,fast.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,dmc.nico,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nicovideo.jp,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,nimg.jp,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,socdm.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,pbs.org,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,phncdn.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,phprcdn.com, \U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,pornhub.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,pornhubpremium.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,skyking.com.tw,\U0001F30E全球加速Media"
+- "DOMAIN,hamifans.emome.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,twitch.tv,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,twitchcdn.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,ttvnw.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,jtvnw.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,viu.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,viu.tv,\U0001F30E全球加速Media"
+- "DOMAIN,api.viu.now.com,\U0001F30E全球加速Media"
+- "DOMAIN,d1k2us671qcoau.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN,d2anahhhmp1ffz.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN,dfp6rglgjqszk.cloudfront.net,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,googlevideo.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,youtube.com,\U0001F30E全球加速Media"
+- "DOMAIN,youtubei.googleapis.com,\U0001F30E全球加速Media"
+- "DOMAIN-SUFFIX,qhres.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qhimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,akadns.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,akamaized.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,alibaba.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,alicdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,alikunlun.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,alipay.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,amap.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,autonavi.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,dingtalk.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,mxhichina.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,soku.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,taobao.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tmall.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tmall.hk,\U0001F448直连"
+- "DOMAIN-SUFFIX,ykimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,youku.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,xiami.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,xiami.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,baidu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,baidubcr.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,bdstatic.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,yunjiasu-cdn.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,blizzard.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,battle.net,\U0001F448直连"
+- "DOMAIN,blzddist1-a.akamaihd.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,feiliao.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,pstatp.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,snssdk.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,iesdouyin.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,toutiao.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,cctv.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,cctvpic.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,livechina.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,21cn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,didialift.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,didi\U0001F30E全球加速.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,udache.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,343480.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,baduziyuan.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,com-hs-hkdy.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,czybjz.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,dandanzan.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,fjhps.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,kuyunbo.club,\U0001F448直连"
+- "DOMAIN-SUFFIX,gameloft.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,googletraveladservices.com,\U0001F448直连"
+- "DOMAIN,dl.google.com,\U0001F448直连"
+- "DOMAIN,mtalk.google.com,\U0001F448直连"
+- "DOMAIN,safebrowsing.googleapis.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,hitv.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,mgtv.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,jd.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,jd.hk,\U0001F448直连"
+- "DOMAIN-SUFFIX,jdpay.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,360buyimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,iciba.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ksosoft.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,hamreus.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,manhuagui.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,meitu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,meitudata.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,meitustat.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,meipai.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,duokan.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,mi-img.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,miui.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,miwifi.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,xiaomi.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,azure.cn,\U0001F448直连"
+- "DOMAIN-SUFFIX,hotmail.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,msn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,outlook.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,windows.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,windows.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,windowsupdate.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sharepoint.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,163.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,126.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,127.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,163yun.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,lofter.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,netease.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ydstatic.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sina.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,weibo.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,weibocdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sohu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sohucs.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sohu-inc.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,v-56.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sogo.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sogou.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sogoucdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,gtimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,idqqimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,igamecj.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,myapp.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,myqcloud.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qq.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qqmail.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,servicewechat.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tencent.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tencent-cloud.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,tenpay.com,\U0001F448直连"
+- "DOMAIN,file-igamecj.akamaized.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,byteoversea.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,faceu.mobi,\U0001F448直连"
+- "DOMAIN-SUFFIX,ibytedtos.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,zimuzu.io,\U0001F448直连"
+- "DOMAIN-SUFFIX,zimuzu.tv,\U0001F448直连"
+- "DOMAIN-SUFFIX,zmz2019.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,zmzapi.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,zmzapi.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,zmzfile.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ccgslb.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ccgslb.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,chinanetcenter.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,meixincdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ourdvs.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,staticdn.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,wangsu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ipip.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,ip.la,\U0001F448直连"
+- "DOMAIN-SUFFIX,ip-cdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ipv6-test.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,test-ipv6.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,whatismyip.com,\U0001F448直连"
+- "DOMAIN-KEYWORD,speedtest,\U0001F448直连"
+- "DOMAIN-SUFFIX,ooklaserver.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,awesome-hd.me,\U0001F448直连"
+- "DOMAIN-SUFFIX,broadcasthe.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,chdbits.co,\U0001F448直连"
+- "DOMAIN-SUFFIX,classix-unlimited.co.uk,\U0001F448直连"
+- "DOMAIN-SUFFIX,empornium.me,\U0001F448直连"
+- "DOMAIN-SUFFIX,gazellegames.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,hdbits.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,hdchina.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,hdhome.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,hdsky.me,\U0001F448直连"
+- "DOMAIN-SUFFIX,icetorrent.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,jpopsuki.eu,\U0001F448直连"
+- "DOMAIN-SUFFIX,keepfrds.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,m-team.cc,\U0001F448直连"
+- "DOMAIN-SUFFIX,madsrevolution.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,morethan.tv,\U0001F448直连"
+- "DOMAIN-SUFFIX,nanyangpt.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ncore.cc,\U0001F448直连"
+- "DOMAIN-SUFFIX,open.cd,\U0001F448直连"
+- "DOMAIN-SUFFIX,ourbits.club,\U0001F448直连"
+- "DOMAIN-SUFFIX,passthepopcorn.me,\U0001F448直连"
+- "DOMAIN-SUFFIX,privatehd.to,\U0001F448直连"
+- "DOMAIN-SUFFIX,pterclub.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,redacted.ch,\U0001F448直连"
+- "DOMAIN-SUFFIX,springsunday.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,tjupt.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,totheglory.im,\U0001F448直连"
+- "DOMAIN-SUFFIX,acm.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,acs.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,aip.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,ams.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,annualreviews.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,aps.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,ascelibrary.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,asm.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,asme.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,astm.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,bmj.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,cambridge.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,cas.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,clarivate.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ebscohost.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,emerald.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,engineeringvillage.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,icevirtuallibrary.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ieee.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,imf.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,iop.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,jamanetwork.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,jhu.edu,\U0001F448直连"
+- "DOMAIN-SUFFIX,jstor.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,karger.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,libguides.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,madsrevolution.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,mpg.de,\U0001F448直连"
+- "DOMAIN-SUFFIX,myilibrary.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,nature.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,oecd-ilibrary.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,osapublishing.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,oup.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ovid.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,oxfordartonline.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,oxfordbibliographies.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,oxfordmusiconline.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,pnas.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,proquest.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,rsc.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,sagepub.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sciencedirect.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sciencemag.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,scopus.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,siam.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,spiedigitallibrary.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,springer.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,springerlink.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tandfonline.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,un.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,uni-bielefeld.de,\U0001F448直连"
+- "DOMAIN-SUFFIX,webofknowledge.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,westlaw.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,wiley.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,worldbank.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,worldscientific.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,17jita.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,360in.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,51ym.me,\U0001F448直连"
+- "DOMAIN-SUFFIX,8686c.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,abchina.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,accuweather.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,aicoinstorge.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,air-matters.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,air-matters.io,\U0001F448直连"
+- "DOMAIN-SUFFIX,aixifan.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,amd.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,b612.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,bdatu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,beitaichufang.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,bjango.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,booking.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,bstatic.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,cailianpress.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,camera360.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,chinaso.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,chua.pro,\U0001F448直连"
+- "DOMAIN-SUFFIX,chuimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,chunyu.mobi,\U0001F448直连"
+- "DOMAIN-SUFFIX,chushou.tv,\U0001F448直连"
+- "DOMAIN-SUFFIX,cmbchina.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,cmbimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ctrip.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,dfcfw.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,docschina.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,douban.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,doubanio.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,douyu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,dxycdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,dytt8.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,eastmoney.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,eudic.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,feng.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,fengkongcloud.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,frdic.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,futu5.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,futunn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,gandi.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,geilicdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,getpricetag.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,gifshow.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,godic.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,hicloud.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,hongxiu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,hostbuf.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,huxiucdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,huya.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,infinitynewtab.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ithome.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,iyingdi.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,java.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,jidian.im,\U0001F448直连"
+- "DOMAIN-SUFFIX,kaiyanapp.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,kaspersky-labs.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,keepcdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,kkmh.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,licdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,loli.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,luojilab.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,maoyan.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,maoyun.tv,\U0001F448直连"
+- "DOMAIN-SUFFIX,meituan.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,meituan.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,mobike.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,moke.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,mubu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,myzaker.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,nim-lang-cn.org,\U0001F448直连"
+- "DOMAIN-SUFFIX,novipnoad.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,nvidia.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,oracle.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qdaily.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qidian.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qyer.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,qyerstatic.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,raychase.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,ronghub.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ruguoapp.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,s-reader.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sankuai.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,seafile.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sm.ms,\U0001F448直连"
+- "DOMAIN-SUFFIX,smzdm.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,snapdrop.net,\U0001F448直连"
+- "DOMAIN-SUFFIX,snwx.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sspai.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,takungpao.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,teamviewer.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tianyancha.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,tophub.today,\U0001F448直连"
+- "DOMAIN-SUFFIX,udacity.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,uning.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,unity3d.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,vmware.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,weather.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,weico.cc,\U0001F448直连"
+- "DOMAIN-SUFFIX,weidian.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,xiachufang.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,ximalaya.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,xinhuanet.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,xmcdn.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,yangkeduo.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,zhangzishi.cc,\U0001F448直连"
+- "DOMAIN-SUFFIX,zhihu.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,zhimg.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,zhuihd.com,\U0001F448直连"
+- "DOMAIN,analytics.strava.com,\U0001F448直连"
+- "DOMAIN,download.jetbrains.com,\U0001F448直连"
+- "DOMAIN,images-cn.ssl-images-amazon.com,\U0001F448直连"
+- "DOMAIN,cdn.angruo.com,\U0001F448直连"
+- DOMAIN-SUFFIX,ampproject.org,Google
+- DOMAIN-SUFFIX,appspot.com,Google
+- DOMAIN-SUFFIX,blogger.com,Google
+- DOMAIN-SUFFIX,getoutline.org,Google
+- DOMAIN-SUFFIX,googleapis.cn,Google
+- DOMAIN-SUFFIX,gvt0.com,Google
+- DOMAIN-SUFFIX,gvt1.com,Google
+- DOMAIN-SUFFIX,gvt3.com,Google
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Google
+- DOMAIN-KEYWORD,google,Google
+- DOMAIN-KEYWORD,blogspot,Google
+- "DOMAIN-SUFFIX,paypal.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,paypalobjects.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,onedrive.live.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xboxlive.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xboxlive.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cdninstagram.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fb.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fb.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fbaddins.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fbcdn.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fbsbx.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fbworkmail.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,instagram.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,m.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,messenger.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,oculus.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,oculuscdn.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,rocksdb.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,whatsapp.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,whatsapp.net,\U0001F30E全球加速"
+- "DOMAIN-KEYWORD,facebook,\U0001F30E全球加速"
+- "IP-CIDR,3.123.36.126/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,35.157.215.84/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,35.157.217.255/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,52.58.209.134/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,54.93.124.31/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,54.162.243.80/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,54.173.34.141/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,54.235.23.242/32,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,169.45.248.118/32,\U0001F30E全球加速,no-resolve"
+- "DOMAIN-SUFFIX,pscp.tv,\U0001F426twitter"
+- "DOMAIN-SUFFIX,periscope.tv,\U0001F426twitter"
+- "DOMAIN-SUFFIX,t.co,\U0001F426twitter"
+- "DOMAIN-SUFFIX,twimg.co,\U0001F426twitter"
+- "DOMAIN-SUFFIX,twimg.com,\U0001F426twitter"
+- "DOMAIN-SUFFIX,twitpic.com,\U0001F426twitter"
+- "DOMAIN-SUFFIX,vine.co,\U0001F426twitter"
+- "DOMAIN-KEYWORD,\U0001F426twitter,\U0001F426twitter"
+- "DOMAIN-SUFFIX,t.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tdesktop.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,telegra.ph,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,telegram.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,telegram.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,telesco.pe,\U0001F30E全球加速"
+- "IP-CIDR,91.108.4.0/22,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,91.108.8.0/21,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,91.108.16.0/22,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,91.108.56.0/22,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,149.154.160.0/20,\U0001F30E全球加速,no-resolve"
+- "DOMAIN-SUFFIX,line.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,line-apps.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,line-scdn.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,naver.jp,\U0001F30E全球加速"
+- "IP-CIDR,103.2.30.0/23,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,125.209.208.0/20,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,147.92.128.0/17,\U0001F30E全球加速,no-resolve"
+- "IP-CIDR,203.104.144.0/21,\U0001F30E全球加速,no-resolve"
+- "DOMAIN-SUFFIX,4shared.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,520cc.cc,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,881903.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,9cache.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,9gag.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,abc.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,abc.net.au,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,abebooks.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,amazon.co.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apigee.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apk-dl.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apkfind.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apkmirror.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apkmonk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apkpure.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,aptoide.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,archive.is,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,archive.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,arte.tv,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,artstation.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,arukas.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ask.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,avg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,avgle.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,badoo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bandwagonhost.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bbc.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,behance.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bibox.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,biggo.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,binance.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bitcointalk.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bitfinex.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bitmex.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bit-z.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bloglovin.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bloomberg.cn,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bloomberg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,blubrry.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,book.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,booklive.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,books.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,boslife.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,box.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,businessinsider.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bwh1.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,castbox.fm,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cbc.ca,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cdw.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,change.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,channelnewsasia.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ck101.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,clarionproject.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,clyp.it,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cna.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,comparitech.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,conoha.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,crucial.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cts.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cw.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cyberctm.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dailymotion.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dailyview.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,daum.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,daumcdn.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dcard.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,deepdiscount.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,depositphotos.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,deviantart.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,disconnect.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,discordapp.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,discordapp.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,disqus.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dlercloud.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dns2go.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dowjones.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dropbox.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dropboxusercontent.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,duckduckgo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dw.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dynu.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,earthcam.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ebookservice.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,economist.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,edgecastcdn.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,edu,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,elpais.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,enanyang.my,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,encyclopedia.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,esoir.be,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,etherscan.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,euronews.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,evozi.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,feedly.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,firech.at,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,flickr.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,flitto.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,foreignpolicy.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,freebrowser.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,freewechat.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,freeweibo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,friday.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ftchinese.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ftimg.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gate.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,getlantern.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,getsync.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,\U0001F30E全球加速voices.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gog.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,goo.ne.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,goodreads.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gov,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gov.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,greatfire.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gumroad.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hbg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,heroku.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hightail.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hk01.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hkbf.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hkbookcity.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hkej.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hket.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hkgolden.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hootsuite.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hudson.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hyread.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ibtimes.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,i-cable.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,icij.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,icoco.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,imgur.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,initiummall.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,insecam.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ipfs.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,issuu.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,istockphoto.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,japantimes.co.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,jiji.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,jinx.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,jkforum.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,joinmastodon.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,justmysocks.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,justpaste.it,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,kakao.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,kakaocorp.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,kik.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,kobo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,kobobooks.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,kodingen.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,lemonde.fr,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,lepoint.fr,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,lihkg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,listennotes.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,livestream.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,logmein.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mail.ru,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mailchimp.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,marc.info,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,matters.news,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,maying.co,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,medium.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mega.nz,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mil,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mingpao.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mobile01.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,myspace.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,myspacecdn.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nanyang.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,naver.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,neowin.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,newstapa.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nexitally.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nhk.or.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nicovideo.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nii.ac.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nikkei.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nofile.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,now.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nrk.no,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nyt.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytchina.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytcn.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytco.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytimes.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytimg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytlog.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nytstyle.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ok.ru,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,okex.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,on.cc,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,orientaldaily.com.my,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,overcast.fm,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,paltalk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pao-pao.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,parsevideo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pbxes.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pcdvd.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pchome.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pcloud.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,picacomic.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pinimg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pixiv.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,player.fm,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,plurk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,po18.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,potato.im,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,potatso.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,prism-break.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,proxifier.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pt.im,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pts.org.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pubu.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pubu.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pureapk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pximg.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,quora.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,quoracdn.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,rakuten.co.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,readingtimes.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,readmoo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,redbubble.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,reddit.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,redditmedia.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,resilio.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,reuters.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,reutersmedia.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,rfi.fr,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,rixcloud.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,roadshow.hk,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,scmp.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,scribd.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,seatguru.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,shadowsocks.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,shopee.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,slideshare.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,softfamous.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,soundcloud.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ssrcloud.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,startpage.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,steamcommunity.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,steemit.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,steemitwallet.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,t66y.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tapatalk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,teco-hk.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,teco-mo.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,teddysun.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,textnow.me,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,theguardian.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,theinitium.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,thetvdb.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tineye.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,torproject.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tumblr.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,turbobit.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tutanota.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tvboxnow.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,udn.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,unseen.is,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,upmedia.mg,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,uptodown.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,urbandictionary.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ustream.tv,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,uwants.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,v2ray.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,viber.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,videopress.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,vimeo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,voachinese.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,voanews.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,voxer.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,vzw.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,w3schools.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,washingtonpost.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wattpad.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,whoer.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wikimapia.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wikipedia.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wikiquote.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wikiwand.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,winudf.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wire.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wordpress.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,workflow.is,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,worldcat.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wsj.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wsj.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xhamster.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xn--90wwvt03e.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xn--i2ru8q2qg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xnxx.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xvideos.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yahoo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yandex.ru,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ycombinator.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yesasia.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yes-news.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yomiuri.co.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,you-get.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,zaobao.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,zb.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,zello.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,zeronet.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,zoom.us,\U0001F30E全球加速"
+- "DOMAIN-KEYWORD,github,\U0001F30E全球加速"
+- "DOMAIN-KEYWORD,jav,\U0001F30E全球加速"
+- "DOMAIN-KEYWORD,pinterest,\U0001F30E全球加速"
+- "DOMAIN-KEYWORD,porn,\U0001F30E全球加速"
+- "DOMAIN-KEYWORD,wikileaks,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apartmentratings.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,apartments.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bankmobilevibe.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bing.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,booktopia.com.au,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cccat.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,centauro.com.br,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,clearsurance.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,costco.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,crackle.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,depositphotos.cn,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dish.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dmm.co.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dmm.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dnvod.tv,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,esurance.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,extmatrix.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fastpic.ru,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,flipboard.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fnac.be,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fnac.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,funkyimg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,fxnetworks.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gettyimages.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,go.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,here.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,jcpenney.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,jiehua.tv,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,mailfence.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nationwide.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nbc.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nexon.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nordstrom.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nordstromimage.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nordstromrack.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,superpages.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,target.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,thinkgeek.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tracfone.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,uploader.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,vevo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,viu.tv,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,vk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,vsco.co,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,xfinity.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,zattoo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,abc.xyz,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,android.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,androidify.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dialogflow.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,autodraw.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,capitalg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,certificate-transparency.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,chrome.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,chromeexperiments.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,chromestatus.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,chromium.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,creativelab5.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,debug.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,deepmind.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,firebaseio.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,getmdl.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ggpht.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gmail.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gmodules.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,godoc.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,golang.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gstatic.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gv.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gwtproject.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,itasoftware.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,madewithcode.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,material.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,polymer-project.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,admin.recaptcha.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,recaptcha.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,shattered.io,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,synergyse.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tensorflow.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tfhub.dev,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tiltbrush.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,waveprotocol.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,waymo.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,webmproject.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,webrtc.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,whatbrowser.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,widevine.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,x.company,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,youtu.be,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yt.be,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ytimg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,1drv.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,1drv.ms,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,blob.core.windows.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,livefilestore.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,onedrive.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,storage.live.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,storage.msn.com,\U0001F30E全球加速"
+- "DOMAIN,oneclient.sfx.ms,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,0rz.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,4bluestones.biz,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,9bis.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,allconnected.co,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,aol.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bcc.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bit.ly,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,bitshare.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,blog.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,blogimg.jp,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,blogtd.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,broadcast.co.nz,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,camfrog.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cfos.de,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,citypopulation.de,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cloudfront.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ctitv.com.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cuhk.edu.hk,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cusu.hk,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,discord.gg,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,discuss.com.hk,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,dropboxapi.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,duolingo.cn,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,edditstatic.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,flickriver.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,focustaiwan.tw,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,free.fr,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,gigacircle.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hk-pub.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hosting.co.uk,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,hwcdn.net,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,ifixit.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,iphone4hongkong.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,iphonetaiwan.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,iptvbin.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,linksalpha.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,manyvids.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,myactimes.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,newsblur.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,now.im,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,nowe.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,redditlist.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,s3.amazonaws.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,signal.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,smartmailcloud.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,sparknotes.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,streetvoice.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,supertop.co,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tinyurl.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,tv.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,typepad.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,udnbkk.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,urbanairship.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,whispersystems.org,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wikia.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wn.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,wolframalpha.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,x-art.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,yimg.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,pokemon.men,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,cattt.com,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,orz.ee,\U0001F30E全球加速"
+- "DOMAIN-SUFFIX,touch.fish,\U0001F30E全球加速"
+- "DOMAIN,api.steampowered.com,\U0001F30E全球加速"
+- "DOMAIN,store.steampowered.com,\U0001F30E全球加速"
+- "DOMAIN,localhost,\U0001F448直连"
+- "DOMAIN-SUFFIX,local,\U0001F448直连"
+- "IP-CIDR,0.0.0.0/8,\U0001F448直连,no-resolve"
+- "IP-CIDR,10.0.0.0/8,\U0001F448直连,no-resolve"
+- "IP-CIDR,127.0.0.0/8,\U0001F448直连,no-resolve"
+- "IP-CIDR,169.254.0.0/16,\U0001F448直连,no-resolve"
+- "IP-CIDR,172.16.0.0/12,\U0001F448直连,no-resolve"
+- "IP-CIDR,192.0.2.0/24,\U0001F448直连,no-resolve"
+- "IP-CIDR,192.168.0.0/16,\U0001F448直连,no-resolve"
+- "IP-CIDR,198.18.0.0/15,\U0001F448直连,no-resolve"
+- "IP-CIDR,198.51.100.0/24,\U0001F448直连,no-resolve"
+- "IP-CIDR,203.0.113.0/24,\U0001F448直连,no-resolve"
+- "IP-CIDR,224.0.0.0/4,\U0001F448直连,no-resolve"
+- "IP-CIDR,240.0.0.0/4,\U0001F448直连,no-resolve"
+- "DOMAIN-SUFFIX,cn,\U0001F448直连"
+- "DOMAIN-SUFFIX,xn--fiqs8s,\U0001F448直连"
+- "DOMAIN-SUFFIX,sf-express.com,\U0001F448直连"
+- "DOMAIN-SUFFIX,sfai.ml,\U0001F448直连"
+- "DOMAIN-SUFFIX,sfai.io,\U0001F448直连"
+- "GEOIP,CN,\U0001F448直连"
+- "MATCH,\U0001F30E全球加速"
